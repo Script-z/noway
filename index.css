@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+body {
+    margin: 0px;
+    font-family: Montserrat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#center {
+    width: fit-content;
+    height: fit-content;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    position: absolute;
+}
+
+#friends {
+    border: 2px solid #dc143c;
+    background-color: none;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    transition: 0.3s background, 0.3s color;
+    width: 200px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: relative;
+}
+
+#friends:hover {
+    background-color: #dc143c;
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#name {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 20px #00000080;
+}
+
+#avatar {
+    width: 200px;
+    height: 200px;
+    background: rgb(56, 56, 56);
+    border-radius: 300px;
+    position: relative;
+    transform: translate(-50%, 0);
+    background-size: 100%;
+    left: 50%;
+    border: 5px solid #9b10a0;
+}
+.switch {
+    position:absolute;
+    display: inline-block;
+    width: 60px;
+    height:34px;
+    left: 5%;
+    top:3%;
+}
+
+.switch input {
+    opacity:0;
+    width:0;
+    height:0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width:26px ;
+    left:4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #dc143c;
+}
+
+input:focus + .slider{
+    box-shadow: 0 0 20px #2b78c2;
+}
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#clickme {
+    color: #d9ddde;
+    position:absolute;
+    display: inline-block;
+    width: 60px;
+    height:34px;
+    left: 5%;
+    top:3%;
+    text-indent: 12em;
+    font-size: 18px; 
+}
